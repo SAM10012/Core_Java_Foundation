@@ -1,0 +1,21 @@
+import java.util.*;
+public class Fibonacci_Num_Using_Rec
+{
+    static int a=0,b=1,c=0;
+    public static int Fib(int n)
+    {
+        if(n==0 || n==1)
+        {
+            return 1;
+        }
+        else
+        return Fib(n-1)+Fib(n-2);
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int ans = Fib(n-2);
+        System.out.println(ans);
+    }
+}
